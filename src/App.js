@@ -9,7 +9,7 @@ function App() {
 
   const handleClick = (e) => {
     e.preventDefault();
-    if (userName === "user" && password === "Password") {
+    if (userName === "user" && password === "password") {
       setIsLoggedIn(true);
     } else {
       setError("Invalid username or password");
@@ -20,9 +20,7 @@ function App() {
     <div className="App">
       <h1>Login Page</h1>
       {isLoggedIn ? (
-        <div>
-          <p>Welcome, user</p>
-        </div>
+        <p>Welcome, user</p>
       ) : (
         <div>
           <form onSubmit={handleClick}>
