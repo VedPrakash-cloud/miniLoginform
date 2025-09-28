@@ -12,7 +12,7 @@ function App() {
     if (userName === "user" && password === "Password") {
       setIsLoggedIn(true);
     } else {
-      setError("Invalid username or passowrd");
+      setError("Invalid username or password");
     }
   };
 
@@ -21,7 +21,7 @@ function App() {
       <h1>Login Page</h1>
       {isLoggedIn ? (
         <div>
-          <p>Welcome, user!</p>
+          <p>Welcome, user</p>
         </div>
       ) : (
         <div>
