@@ -21,7 +21,7 @@ function App() {
       <h1>Login Page</h1>
       {isLoggedIn ? (
         <div>
-          <p>Welcome user!</p>
+          <p>Welcome, user!</p>
         </div>
       ) : (
         <div>
@@ -35,7 +35,7 @@ function App() {
               required
             />
             <br />
-            <label htmlFor={password}>Password: </label>
+            <label htmlFor="Password">Password: </label>
             <input
               type="password"
               value={password}
